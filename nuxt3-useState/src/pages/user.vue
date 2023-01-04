@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { stringify } from 'querystring';
-
 const user = useState<{ id: string, name: string, mail: string }>('login-user', () => {
   console.log('retrieving user info...');
   return {
