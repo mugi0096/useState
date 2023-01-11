@@ -1,6 +1,11 @@
 <script lang="ts" setup>
-const user = useState<{ id: string, name: string, mail: string }>('login-user', () => {
-  console.log('retrieving user info...');
+type User = {
+  id: string;
+  name: string;
+  mail: string;
+};
+
+const user = useState<User>('login-user', () => {
   return {
     id: '123',
     name: 'ueno',

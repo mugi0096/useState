@@ -1,6 +1,13 @@
 <script lang="ts" setup>
 import type { Ref } from 'vue';
-const user: Ref<{ id: string, name: string, mail: string }> = useState('login-user')
+
+type User = {
+  id: string;
+  name: string;
+  mail: string;
+};
+
+const user: Ref<User> = useState('login-user')
 </script>
 
 <template>
